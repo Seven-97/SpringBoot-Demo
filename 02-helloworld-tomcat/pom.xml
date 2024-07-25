@@ -7,14 +7,16 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>01-helloworld-main</artifactId>
-    <packaging>jar</packaging>
+    <groupId>com.seven.helloworldtomcat</groupId>
+    <artifactId>02-helloworld-tomcat</artifactId>
+    <packaging>war</packaging>
 
-    <name>01-helloworld-main</name>
+    <name>02-helloworld-tomcat</name>
     <url>http://maven.apache.org</url>
 
     <properties>
         <spring-boot-version>2.7.18</spring-boot-version>
+        <servlet.javax.servlet-api.version>3.0.1</servlet.javax.servlet-api.version>
     </properties>
 
     <dependencies>
@@ -22,8 +24,18 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
             <version>${spring-boot-version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-tomcat</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>${servlet.javax.servlet-api.version}</version>
         </dependency>
     </dependencies>
-
 
 </project>

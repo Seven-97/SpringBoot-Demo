@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="01-helloworld-main" />
+        <module name="02-helloworld-tomcat" />
       </profile>
     </annotationProcessing>
   </component>
