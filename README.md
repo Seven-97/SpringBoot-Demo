@@ -4,4 +4,5 @@
 ## 02-helloworld-tomcat
 使用外置Tomcat启动的Springboot项目
 
-
+## 03-controller-validation
+优雅的参数校验，特别包含枚举字段的校验
