@@ -3,7 +3,7 @@ package com.seven.controllervalidation.service.impl;
 
 import com.seven.controllervalidation.entity.pojo.User;
 import com.seven.controllervalidation.entity.vo.UserVo;
-import com.seven.controllervalidation.mapper.UserMapper;
+import com.seven.controllervalidation.mapper.UserMapperImpl;
 import com.seven.controllervalidation.service.UserService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,18 +16,18 @@ import java.util.List;
 @Service
 public class UserServiceImpl implements UserService {
 
-    private final UserMapper userMapper;
+    private final UserMapperImpl userMapperImpl;
 
     //构造器注入
     @Autowired
-    public UserServiceImpl(UserMapper userMapper) {
-        this.userMapper = userMapper;
+    public UserServiceImpl(UserMapperImpl userMapperImpl) {
+        this.userMapperImpl = userMapperImpl;
     }
 
     @Override
     public List<UserVo> selectUserList() {
         List<UserVo> userVos = new ArrayList<>();
-        List<User> users = userMapper.selectUserList();
+        List<User> users = userMapperImpl.selectUserList();
         for (User user : users) {
             UserVo userVo = new UserVo();
             BeanUtils.copyProperties(user, userVo);
@@ -39,7 +39,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public UserVo selectUserById(Integer id) {
         UserVo userVo = null;
-        User user = userMapper.selectUserById(id);
+        User user = userMapperImpl.selectUserById(id);
         if (user != null) {
             userVo = new UserVo();
             BeanUtils.copyProperties(user, userVo);
@@ -50,7 +50,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public UserVo selectUserByUserName(String userName) {
         UserVo userVo = null;
-        User user = userMapper.selectUserByUserName(userName);
+        User user = userMapperImpl.selectUserByUserName(userName);
         if (user != null) {
             userVo = new UserVo();
             BeanUtils.copyProperties(user, userVo);
@@ -61,18 +61,18 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public int insertUser(User userVo) {
-        return userMapper.insertUser(userVo);
+        return userMapperImpl.insertUser(userVo);
     }
 
 
     @Override
     public int updateUser(User userVo) {
-        return userMapper.updateUser(userVo);
+        return userMapperImpl.updateUser(userVo);
     }
 
     @Override
     public int deleteUser(Integer id) {
-        return userMapper.deleteUser(id);
+        return userMapperImpl.deleteUser(id);
     }
 
 }

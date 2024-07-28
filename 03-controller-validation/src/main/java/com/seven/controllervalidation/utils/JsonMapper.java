@@ -10,7 +10,7 @@ import java.io.IOException;
  * json转换工具类
  */
 @Slf4j
-public class JsonMapper {
+public class    JsonMapper {
 
     private static final ObjectMapper objectMapper = new ObjectMapper();
 
