@@ -1,4 +1,4 @@
-package com.seven.controllervalidation.utils;
+package com.seven.controllervalidation.util;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.base.Strings;

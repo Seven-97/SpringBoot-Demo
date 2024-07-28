@@ -1,6 +1,6 @@
 package com.seven.controllervalidation.result;
 
-import com.seven.controllervalidation.utils.JsonMapper;
+import com.seven.controllervalidation.util.JsonMapper;
 import lombok.Data;
 
 /**

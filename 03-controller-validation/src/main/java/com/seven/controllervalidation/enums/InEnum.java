@@ -1,6 +1,6 @@
 package com.seven.controllervalidation.enums;
 
-import com.seven.controllervalidation.utils.InEnumValidator;
+import com.seven.controllervalidation.util.InEnumValidator;
 
 import javax.validation.Constraint;
 import javax.validation.Payload;

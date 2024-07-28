@@ -1,4 +1,4 @@
-package com.seven.controllervalidation.utils;
+package com.seven.controllervalidation.util;
 
 
 

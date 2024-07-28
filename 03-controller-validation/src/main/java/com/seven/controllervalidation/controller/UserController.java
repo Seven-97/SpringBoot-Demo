@@ -8,7 +8,7 @@ import com.seven.controllervalidation.entity.vo.UserVo;
 import com.seven.controllervalidation.result.Result;
 import com.seven.controllervalidation.result.UserResultConstants;
 import com.seven.controllervalidation.service.UserService;
-import com.seven.controllervalidation.utils.JsonMapper;
+import com.seven.controllervalidation.util.JsonMapper;
 import jdk.internal.joptsimple.internal.Strings;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
