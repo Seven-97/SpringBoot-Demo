@@ -1,8 +1,8 @@
 package com.seven.controllervalidation.utils;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.common.base.Strings;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang3.StringUtils;
 
 import java.io.IOException;
 
@@ -10,7 +10,7 @@ import java.io.IOException;
  * json转换工具类
  */
 @Slf4j
-public class    JsonMapper {
+public class JsonMapper {
 
     private static final ObjectMapper objectMapper = new ObjectMapper();
 
@@ -26,7 +26,7 @@ public class    JsonMapper {
 
     //  将JSON字符串转换回对象
     public static <T> T fromJson(String json, Class<T> clazz) {
-        if (StringUtils.isBlank(json)) {
+        if (Strings.isNullOrEmpty(json)) {
             return null;
         }
         try {
