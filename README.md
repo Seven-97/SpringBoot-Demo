@@ -10,4 +10,5 @@
 ## 04-mybatis-generator
 根据数据库字段 生成bean、mapper接口、mapper.xml
 
-
+## 05-mybatis-mysql-druid
+SpringBoot整合Mybatis + Mysql5 + druid

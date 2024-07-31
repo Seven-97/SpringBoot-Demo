@@ -10,6 +10,7 @@
         <module name="04-mybatis-generator" />
         <module name="01-helloworld-main" />
         <module name="02-helloworld-tomcat" />
+        <module name="05-mybatis-mysql-druid" />
         <module name="03-controller-validation" />
       </profile>
     </annotationProcessing>

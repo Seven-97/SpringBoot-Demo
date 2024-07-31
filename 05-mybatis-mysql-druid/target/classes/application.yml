@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+
+spring:
+  #数据库的连接信息：5项，这里我是mysql5的连接信息
+  datasource:
+    url: jdbc:mysql://localhost:3307/test_db?useSSL=false&autoReconnect=true&characterEncoding=utf8
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource  #当前数据源操作类型
+
+mybatis:
+  #匹配sql语句的映射文件的位置，classpat代表在resources下
+  mapper-locations: classpath:mapper/*.xml
+
