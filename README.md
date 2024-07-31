@@ -6,3 +6,8 @@
 
 ## 03-controller-validation
 优雅的参数校验，特别包含枚举字段的校验
+
+## 04-mybatis-generator
+根据数据库字段 生成bean、mapper接口、mapper.xml
+
+
