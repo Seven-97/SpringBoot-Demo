@@ -51,12 +51,15 @@ public class Result {
         return new Result(retCode, retMsg);
     }
 
+    public static Result ok(ResultConstats resultConstats) {
+        return ok(resultConstats.getCode(), resultConstats.getMessage());
+    }
+
     public static Result error(String retCode, String retMsg) {
         return new Result(retCode, retMsg);
     }
 
-    public String toJsonString() {
-        return JsonMapper.toJson(this);
+    public static Result error(ResultConstats resultConstats) {
+        return error(resultConstats.getCode(), resultConstats.getMessage());
     }
-
 }

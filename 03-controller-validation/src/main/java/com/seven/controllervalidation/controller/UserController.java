@@ -61,7 +61,7 @@ public class UserController {
     public Result selectById(@PathVariable String id) {
         Integer intId = Ints.tryParse(id);
         if (intId == null) {
-            return Result.error(UserResultConstants.NOT_ID.getCode(), UserResultConstants.NOT_ID.getMessage());
+            return Result.error(UserResultConstants.NOT_ID);
         }
 
         UserVo user = userService.selectUserById(intId);
@@ -81,14 +81,14 @@ public class UserController {
     @GetMapping("/selectByUserName/{userName}")
     public Result selectByUserName(@PathVariable String userName) {
         if (Strings.isNullOrEmpty(userName)) {
-            return Result.error(UserResultConstants.USER_NOT_EXIST.getCode(), UserResultConstants.USER_NOT_EXIST.getMessage());
+            return Result.error(UserResultConstants.USER_NOT_EXIST);
         }
         UserVo user = userService.selectUserByUserName(userName);
         log.info("selectByUserName根据userName:{}执行查询,查询的用户信息为:{}", userName, JsonMapper.toJson(user));
         if (user != null) {
             return Result.ok(user);
         }
-        return Result.error(UserResultConstants.USER_NOT_EXIST.getCode(), UserResultConstants.USER_NOT_EXIST.getMessage());
+        return Result.error(UserResultConstants.USER_NOT_EXIST);
     }
 
     /**
@@ -104,16 +104,16 @@ public class UserController {
         UserVo userQuery = userService.selectUserByUserName(user.getUserName());
         if (userQuery != null) {
             log.error("插入的用户名已存在");
-            return Result.error(UserResultConstants.USERNAME_EXIST.getCode(), UserResultConstants.USERNAME_EXIST.getMessage());
+            return Result.error(UserResultConstants.USERNAME_EXIST);
         }
 
         int res = userService.insertUser(user);
         log.info("insert的用户信息为:{},插入结果为(0表示失败,1表示成功):{}", JsonMapper.toJson(user), res);
         if (res == 0) {
-            return Result.error(UserResultConstants.ADD_FAIL.getCode(), UserResultConstants.ADD_FAIL.getMessage());
+            return Result.error(UserResultConstants.ADD_FAIL);
         }
 
-        return Result.ok(UserResultConstants.ADD_SUCCESS.getCode(), UserResultConstants.ADD_SUCCESS.getMessage());
+        return Result.ok(UserResultConstants.ADD_SUCCESS);
     }
 
     /**
@@ -125,22 +125,22 @@ public class UserController {
     @PostMapping("/update")
     public Result updateUser(@Validated @RequestBody User user) {
         if (user.getId() == null) {
-            return Result.error(UserResultConstants.NOT_ID.getCode(), UserResultConstants.NOT_ID.getMessage());
+            return Result.error(UserResultConstants.NOT_ID);
         }
 
         //检查用户名是否已存在
         UserVo userQuery = userService.selectUserByUserName(user.getUserName());
         if (userQuery != null) {
             log.error("更新的用户名已存在");
-            return Result.error(UserResultConstants.USERNAME_EXIST.getCode(), UserResultConstants.USERNAME_EXIST.getMessage());
+            return Result.error(UserResultConstants.USERNAME_EXIST);
         }
 
         int res = userService.updateUser(user);
         log.info("update的用户信息为:{},更新结果为(0表示失败,1表示成功):{}", JsonMapper.toJson(user), res);
         if (res == 0) {
-            return Result.error(UserResultConstants.UPDATE_FAIL.getCode(), UserResultConstants.UPDATE_FAIL.getMessage());
+            return Result.error(UserResultConstants.UPDATE_FAIL);
         }
-        return Result.ok(UserResultConstants.UPDATE_SUCCESS.getCode(), UserResultConstants.UPDATE_SUCCESS.getMessage());
+        return Result.ok(UserResultConstants.UPDATE_SUCCESS);
     }
 
     /**
@@ -154,14 +154,14 @@ public class UserController {
 
         Integer intId = Ints.tryParse(id);
         if (intId == null) {
-            return Result.error(UserResultConstants.NOT_ID.getCode(), UserResultConstants.NOT_ID.getMessage());
+            return Result.error(UserResultConstants.NOT_ID);
         }
         int res = userService.deleteUser(intId);
         log.info("delete的用户id为:{},删除结果为(0表示失败,1表示成功):{}", id, res);
         if (res == 0) {
-            return Result.error(UserResultConstants.DELETE_FAIL.getCode(), UserResultConstants.DELETE_FAIL.getMessage());
+            return Result.error(UserResultConstants.DELETE_FAIL);
         }
-        return Result.ok(UserResultConstants.DELETE_SUCCESS.getCode(), UserResultConstants.DELETE_SUCCESS.getMessage());
+        return Result.ok(UserResultConstants.DELETE_SUCCESS);
     }
 
 }

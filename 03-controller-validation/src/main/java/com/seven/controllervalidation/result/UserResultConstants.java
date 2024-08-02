@@ -6,7 +6,7 @@ import lombok.Getter;
  * 用户管理相关结果
  */
 @Getter
-public enum UserResultConstants {
+public enum UserResultConstants implements ResultConstats{
 
     NOT_ID("1001","未正确输入用户id"),
     ADD_SUCCESS("1002","新增用户成功"),
