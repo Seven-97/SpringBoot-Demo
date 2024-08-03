@@ -17,9 +17,9 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserMapper userMapper;
 
-    @Override
-    public List<User> selectAll() {
-        return userMapper.slectAll();
+
+    public List<User> queryAll(int offset, int limit){
+        return userMapper.queryAll(offset, limit);
     }
 }
 

@@ -12,3 +12,4 @@
 
 ## 05-mybatis-mysql-druid
 SpringBoot整合Mybatis + Mysql5 + druid
+mybatis自定义 typehandler，实现Java枚举类型与 mysql TINYINT类型的互相转换

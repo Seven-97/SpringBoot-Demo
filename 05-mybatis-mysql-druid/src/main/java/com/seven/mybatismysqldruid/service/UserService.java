@@ -10,5 +10,5 @@ import java.util.List;
  */
 
 public interface UserService {
-    List<User> selectAll();
+    List<User> queryAll(int offset, int limit);
 }

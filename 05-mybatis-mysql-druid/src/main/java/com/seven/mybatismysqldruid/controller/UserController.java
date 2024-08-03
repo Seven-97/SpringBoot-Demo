@@ -19,7 +19,7 @@ public class UserController {
 
     @GetMapping("/user")
     public String list() {
-        List<User> userList = userService.selectAll();
+        List<User> userList = userService.queryAll(0,10);
         for (User user : userList) {
             System.out.println(user);
         }

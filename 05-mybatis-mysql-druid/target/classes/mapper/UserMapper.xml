@@ -4,9 +4,23 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!--namespace对应mapper接口所在的位置-->
 <mapper namespace="com.seven.mybatismysqldruid.mapper.UserMapper">
-    <!--对应mapper接口中的方法List<User> sleceAll() -->
-    <select id="slectAll" resultType="com.seven.mybatismysqldruid.entity.User">
-        select * from user
+
+    <resultMap id="UserInfo" type="com.seven.mybatismysqldruid.entity.User">
+        <result column="id" property="id" jdbcType = "INTEGER"/>
+        <result column="name" property="name" jdbcType = "VARCHAR"/>
+        <result column="age" property="age" jdbcType = "INTEGER"/>
+        <result column="age" property="id" jdbcType = "TINYINT" typeHandler="com.seven.mybatismysqldruid.typehandler.UserGenderEnumHandler"/>
+    </resultMap>
+
+    <!--对应mapper接口中的方法List<User> queryAll() -->
+    <select id="queryAll" resultMap="UserInfo">
+        SELECT id,
+               name,
+               age,
+               gender
+        FROM user
+        ORDER BY id
+            LIMIT #{offset}, #{limit}
     </select>
 
 </mapper>
