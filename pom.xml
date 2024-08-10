@@ -15,6 +15,7 @@
         <module>03-controller-validation</module>
         <module>04-mybatis-generator</module>
         <module>05-mybatis-mysql-druid</module>
+        <module>06-mybatis-mysql-druid-pagehelper</module>
     </modules>
 
 

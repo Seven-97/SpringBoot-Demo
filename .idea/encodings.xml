@@ -11,6 +11,8 @@
     <file url="file://$PROJECT_DIR$/04-mybatis-generator/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/05-mybatis-mysql-druid/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/05-mybatis-mysql-druid/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/06-mybatis-mysql-druid-pagehelper/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/06-mybatis-mysql-druid-pagehelper/src/main/resources" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

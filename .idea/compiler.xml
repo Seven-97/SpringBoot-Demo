@@ -12,6 +12,7 @@
         <module name="02-helloworld-tomcat" />
         <module name="05-mybatis-mysql-druid" />
         <module name="03-controller-validation" />
+        <module name="06-mybatis-mysql-druid-pagehelper" />
       </profile>
     </annotationProcessing>
   </component>
