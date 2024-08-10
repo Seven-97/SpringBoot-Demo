@@ -16,6 +16,7 @@
         <module>04-mybatis-generator</module>
         <module>05-mybatis-mysql-druid</module>
         <module>06-mybatis-mysql-druid-pagehelper</module>
+        <module>07-mybatisplus-mysql</module>
     </modules>
 
 

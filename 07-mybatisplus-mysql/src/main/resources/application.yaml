@@ -1,0 +1,43 @@
+spring:
+  datasource:
+    # rewriteBatchedStatements=true表示mysql的批量更新
+    url: jdbc:mysql://127.0.0.1:3307/test_db?useSSL=false&autoReconnect=true&characterEncoding=utf8&rewriteBatchedStatements=true
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+
+logging:
+  level:
+    com.seven: debug
+  pattern:
+    dateformat: HH:mm:ss
+
+mybatis-plus:
+  type-aliases-package: com.seven.mybatisplusmysql.domain.po
+  # MyBatisPlus也支持手写SQL，而mapper文件的读取地址可以自己配置
+  mapper-locations: classpath*:mapper/*.xml
+  global-config:
+    db-config:
+      id-type: auto
+      logic-delete-field: deleted # 配置逻辑删除字段
+      logic-delete-value: 1 # 逻辑已删除值(默认为 1)
+      logic-not-delete-value: 0 # 逻辑未删除值(默认为 0)
+  configuration:
+    default-enum-type-handler: com.baomidou.mybatisplus.core.handlers.MybatisEnumTypeHandler
+
+
+knife4j:
+  enable: true
+  openapi:
+    title: 用户管理接口文档
+    description: "用户管理接口文档"
+    email: 415849169@qq.com
+    concat: Seven
+    url: www.seven97.top
+    version: v1.0.0
+    group:
+      default:
+        group-name: default
+        api-rule: package
+        api-rule-resources:
+          - com.seven.mybatisplusmysql.controller

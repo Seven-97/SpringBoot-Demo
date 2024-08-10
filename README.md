@@ -20,3 +20,11 @@ SpringBoot整合Mybatis + Mysql5 + druid
 
 Mybatis分页（待完成）
 
+## 07-mybatisplus-mysql
+SpringBoot整合mybatisplus
+
+使用mp的 MybatisEnumTypeHandler 实现Java枚举类型与mysql数据库中 TINYINT类型的互相转换
+
+使用mp的 JacksonTypeHandler 实现Java对象 与 mysql数据库中 json格式的互相转换
+
+实现分页功能，封装通用分页实体
