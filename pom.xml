@@ -17,6 +17,7 @@
         <module>05-mybatis-mysql-druid</module>
         <module>06-mybatis-mysql-druid-pagehelper</module>
         <module>07-mybatisplus-mysql</module>
+        <module>08-mybatisplus-easyexcel</module>
     </modules>
 
 

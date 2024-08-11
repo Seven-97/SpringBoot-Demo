@@ -10,6 +10,7 @@
         <module name="04-mybatis-generator" />
         <module name="02-helloworld-tomcat" />
         <module name="05-mybatis-mysql-druid" />
+        <module name="08-mybatisplus-easyexcel" />
         <module name="01-helloworld-main" />
         <module name="07-mybatisplus-mysql" />
         <module name="03-controller-validation" />
@@ -21,6 +22,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="05-mybatis-mysql-druid" options="" />
       <module name="07-mybatisplus-mysql" options="-parameters" />
+      <module name="08-mybatisplus-easyexcel" options="-parameters" />
     </option>
   </component>
 </project>
