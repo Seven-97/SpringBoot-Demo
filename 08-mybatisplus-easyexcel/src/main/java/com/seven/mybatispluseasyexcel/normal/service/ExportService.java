@@ -1,11 +1,11 @@
-package com.seven.mybatispluseasyexcel.service;
+package com.seven.mybatispluseasyexcel.normal.service;
 
 import com.alibaba.excel.EasyExcel;
 import com.alibaba.excel.ExcelWriter;
 import com.alibaba.excel.write.metadata.WriteSheet;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.seven.mybatispluseasyexcel.domain.Salaries;
-import com.seven.mybatispluseasyexcel.mapper.SalariesMapper;
+import com.seven.mybatispluseasyexcel.normal.domain.Salaries;
+import com.seven.mybatispluseasyexcel.normal.mapper.SalariesMapper;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

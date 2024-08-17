@@ -1,12 +1,12 @@
-package com.seven.mybatispluseasyexcel.listener;
+package com.seven.mybatispluseasyexcel.normal.listener;
 
 import com.alibaba.excel.context.AnalysisContext;
 
 import com.alibaba.excel.read.listener.ReadListener;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.seven.mybatispluseasyexcel.domain.Salaries;
-import com.seven.mybatispluseasyexcel.mapper.SalariesMapper;
+import com.seven.mybatispluseasyexcel.normal.domain.Salaries;
+import com.seven.mybatispluseasyexcel.normal.mapper.SalariesMapper;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.stereotype.Component;

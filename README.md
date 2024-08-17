@@ -28,3 +28,8 @@ SpringBoot整合mybatisplus
 使用mp的 JacksonTypeHandler 实现Java对象 与 mysql数据库中 json格式的互相转换
 
 实现分页功能，封装通用分页实体
+
+## 08-mybatisplus-easyexcel
+springboot整合easyexcel
+
+使用模板方法模式封装easyexcel的工具类，使easyexcel和业务之间解耦

@@ -1,4 +1,4 @@
-package com.seven.mybatispluseasyexcel.domain;
+package com.seven.mybatispluseasyexcel.normal.domain;
 
 import lombok.Data;
 

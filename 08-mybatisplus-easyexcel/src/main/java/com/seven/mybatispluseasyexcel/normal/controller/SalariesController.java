@@ -1,8 +1,8 @@
-package com.seven.mybatispluseasyexcel.controller;
+package com.seven.mybatispluseasyexcel.normal.controller;
 
 
-import com.seven.mybatispluseasyexcel.service.ExportService;
-import com.seven.mybatispluseasyexcel.service.ImportService;
+import com.seven.mybatispluseasyexcel.normal.service.ExportService;
+import com.seven.mybatispluseasyexcel.normal.service.ImportService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;

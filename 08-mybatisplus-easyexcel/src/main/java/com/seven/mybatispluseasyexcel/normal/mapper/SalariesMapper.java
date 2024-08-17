@@ -1,7 +1,7 @@
-package com.seven.mybatispluseasyexcel.mapper;
+package com.seven.mybatispluseasyexcel.normal.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.seven.mybatispluseasyexcel.domain.Salaries;
+import com.seven.mybatispluseasyexcel.normal.domain.Salaries;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
