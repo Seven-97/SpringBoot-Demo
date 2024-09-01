@@ -17,6 +17,8 @@
     <file url="file://$PROJECT_DIR$/07-mybatisplus-mysql/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/08-mybatisplus-easyexcel/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/08-mybatisplus-easyexcel/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/09-aop-limit-repeatsubmit-antishake/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/09-aop-limit-repeatsubmit-antishake/src/main/resources" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

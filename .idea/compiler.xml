@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="04-mybatis-generator" />
         <module name="02-helloworld-tomcat" />
+        <module name="09-aop-limit-repeatsubmit-antishake" />
         <module name="05-mybatis-mysql-druid" />
         <module name="08-mybatisplus-easyexcel" />
         <module name="01-helloworld-main" />
@@ -23,6 +24,7 @@
       <module name="05-mybatis-mysql-druid" options="" />
       <module name="07-mybatisplus-mysql" options="-parameters" />
       <module name="08-mybatisplus-easyexcel" options="-parameters" />
+      <module name="09-aop-limit-repeatsubmit-antishake" options="-parameters" />
     </option>
   </component>
 </project>
