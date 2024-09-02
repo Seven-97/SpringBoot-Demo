@@ -8,9 +8,11 @@ import java.util.concurrent.TimeUnit;
 
 // 该注解只能用于方法
 @Target(ElementType.METHOD)
-// 运行时保留，这样才能在AOP中被检测到
-@Retention(RetentionPolicy.RUNTIME)
+@Retention(RetentionPolicy.RUNTIME)// 运行时保留，这样才能在AOP中被检测到
 public @interface AntiShake {
+
+    String preKey() default "";
+
     // 默认防抖时间1秒
     long value() default 1000L;
 
