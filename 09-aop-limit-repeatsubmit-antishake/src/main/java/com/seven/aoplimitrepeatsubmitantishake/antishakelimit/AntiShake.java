@@ -14,7 +14,7 @@ public @interface AntiShake {
     String preKey() default "";
 
     // 默认防抖时间1秒
-    long value() default 1000L;
+    long value() default 5000L;
 
     TimeUnit timeUnit() default TimeUnit.MILLISECONDS;
 }
