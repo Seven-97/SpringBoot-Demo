@@ -19,6 +19,7 @@
         <module>07-mybatisplus-mysql</module>
         <module>08-mybatisplus-easyexcel</module>
         <module>09-aop-limit-repeatsubmit-antishake</module>
+        <module>A10-spring-srpingboot-extentions</module>
     </modules>
 
 

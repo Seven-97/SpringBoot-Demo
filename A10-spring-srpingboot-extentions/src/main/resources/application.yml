@@ -1,0 +1,8 @@
+server:
+  port: 8080
+
+#context:
+#  initializer:
+#    classes: com.seven.springspringbootextentions.extentions.TestApplicationContextInitializer
+
+
