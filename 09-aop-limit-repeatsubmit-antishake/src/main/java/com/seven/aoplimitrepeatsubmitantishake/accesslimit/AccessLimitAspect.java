@@ -53,7 +53,7 @@ public class AccessLimitAspect {
         }
 
         long count = atomicLong.incrementAndGet();
-        ;
+
         if (count > maxCount) {
             throw new LimitException(accessLimit.msg());
         }
