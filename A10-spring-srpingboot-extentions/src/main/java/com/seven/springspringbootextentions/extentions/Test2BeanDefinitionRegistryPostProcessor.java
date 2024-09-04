@@ -15,7 +15,7 @@ import org.springframework.stereotype.Component;
 public class Test2BeanDefinitionRegistryPostProcessor implements BeanDefinitionRegistryPostProcessor {
     @Override
     public void postProcessBeanDefinitionRegistry(BeanDefinitionRegistry beanDefinitionRegistry) throws BeansException {
-        System.out.println("进入[TestBeanDefinitionRegistryPostProcessor]...postProcessBeanDefinitionRegistry..." + beanDefinitionRegistry);
+        System.out.println("进入[Test2BeanDefinitionRegistryPostProcessor]...postProcessBeanDefinitionRegistry..." + beanDefinitionRegistry);
         RootBeanDefinition beanDefinition = new RootBeanDefinition();
         beanDefinition.setBeanClass(User.class);
         MutablePropertyValues propertyValues = new MutablePropertyValues();
@@ -30,12 +30,12 @@ public class Test2BeanDefinitionRegistryPostProcessor implements BeanDefinitionR
     //BeanFactoryPostProcessor的方法
     @Override
     public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) throws BeansException {
-        System.out.println("进入[TestBeanDefinitionRegistryPostProcessor]...postProcessBeanFactory..." + beanFactory);
+        System.out.println("进入[Test2BeanDefinitionRegistryPostProcessor]...postProcessBeanFactory..." + beanFactory);
 
         BeanDefinition beanDefinition = beanFactory.getBeanDefinition("user");
-        System.out.println("打印[TestBeanDefinitionRegistryPostProcessor]...postProcessBeanFactory..." + beanDefinition.getBeanClassName());
+        System.out.println("打印[Test2BeanDefinitionRegistryPostProcessor]...postProcessBeanFactory..." + beanDefinition.getBeanClassName());
         User user = beanFactory.getBean(User.class);
-        System.out.println("打印[TestBeanDefinitionRegistryPostProcessor]...postProcessBeanFactory..." + user.getName());
-        System.out.println("打印[TestBeanDefinitionRegistryPostProcessor]...postProcessBeanFactory..." + user.getPassword());
+        System.out.println("打印[Test2BeanDefinitionRegistryPostProcessor]...postProcessBeanFactory..." + user.getName());
+        System.out.println("打印[Test2BeanDefinitionRegistryPostProcessor]...postProcessBeanFactory..." + user.getPassword());
     }
 }

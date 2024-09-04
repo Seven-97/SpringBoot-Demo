@@ -15,7 +15,7 @@ public class Test4InstantiationAwareBeanPostProcessor implements InstantiationAw
     @Override
     public Object postProcessBeforeInstantiation(Class<?> beanClass, String beanName) throws BeansException {
         if (isMatchClass(beanClass)) {
-            System.out.println("进入[TestInstantiationAwareBeanPostProcessor]...postProcessBeforeInstantiation..." + beanName);
+            System.out.println("进入[Test4InstantiationAwareBeanPostProcessor]...postProcessBeforeInstantiation..." + beanName);
         }
         return null;
     }
@@ -23,7 +23,7 @@ public class Test4InstantiationAwareBeanPostProcessor implements InstantiationAw
     @Override
     public boolean postProcessAfterInstantiation(Object bean, String beanName) throws BeansException {
         if (isMatchClass(bean.getClass())) {
-            System.out.println("进入[TestInstantiationAwareBeanPostProcessor]...postProcessAfterInstantiation..." + beanName);
+            System.out.println("进入[Test4InstantiationAwareBeanPostProcessor]...postProcessAfterInstantiation..." + beanName);
         }
         return true;
     }
@@ -31,7 +31,7 @@ public class Test4InstantiationAwareBeanPostProcessor implements InstantiationAw
     @Override
     public PropertyValues postProcessPropertyValues(PropertyValues pvs, PropertyDescriptor[] pds, Object bean, String beanName) throws BeansException {
         if (isMatchClass(bean.getClass())) {
-            System.out.println("进入[TestInstantiationAwareBeanPostProcessor]...postProcessPropertyValues..." + beanName);
+            System.out.println("进入[Test4InstantiationAwareBeanPostProcessor]...postProcessPropertyValues..." + beanName);
         }
         return pvs;
     }
@@ -40,7 +40,7 @@ public class Test4InstantiationAwareBeanPostProcessor implements InstantiationAw
     @Override
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
         if (isMatchClass(bean.getClass())) {
-            System.out.println("进入[TestInstantiationAwareBeanPostProcessor]...postProcessBeforeInitialization..." + beanName);
+            System.out.println("进入[Test4InstantiationAwareBeanPostProcessor]...postProcessBeforeInitialization..." + beanName);
         }
         return bean;
     }
@@ -49,7 +49,7 @@ public class Test4InstantiationAwareBeanPostProcessor implements InstantiationAw
     @Override
     public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
         if (isMatchClass(bean.getClass())) {
-            System.out.println("进入[TestInstantiationAwareBeanPostProcessor]...postProcessAfterInitialization..." + beanName);
+            System.out.println("进入[Test4InstantiationAwareBeanPostProcessor]...postProcessAfterInitialization..." + beanName);
         }
         return bean;
     }
@@ -57,7 +57,7 @@ public class Test4InstantiationAwareBeanPostProcessor implements InstantiationAw
     @Override
     public PropertyValues postProcessProperties(PropertyValues pvs, Object bean, String beanName) throws BeansException {
         if (isMatchClass(bean.getClass())) {
-            System.out.println("进入[TestInstantiationAwareBeanPostProcessor]...postProcessProperties..." + beanName);
+            System.out.println("进入[Test4InstantiationAwareBeanPostProcessor]...postProcessProperties..." + beanName);
         }
         return InstantiationAwareBeanPostProcessor.super.postProcessProperties(pvs, bean, beanName);
     }
