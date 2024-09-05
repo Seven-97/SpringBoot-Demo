@@ -4,5 +4,6 @@ server:
 #context:
 #  initializer:
 #    classes: com.seven.springspringbootextentions.extentions.TestApplicationContextInitializer
-
-
+spring:
+  main:
+    allow-circular-references: true
