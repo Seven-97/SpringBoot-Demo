@@ -3,12 +3,6 @@ package com.seven.springspringbootextentions.domain;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.stereotype.Component;
 
-/**
- * @author chenghaoy.yu
- * @description
- * @email chenghaoy.yu@qunar.com
- * @Date 2024/9/4 14:16
- */
 @Component
 public class TestUser implements InitializingBean {
     String name;
