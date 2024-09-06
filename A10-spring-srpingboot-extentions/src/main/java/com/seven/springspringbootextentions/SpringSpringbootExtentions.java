@@ -13,5 +13,5 @@ public class SpringSpringbootExtentions {
 //        springApplication.addInitializers(new TestApplicationContextInitializer());
 //        springApplication.run(args);
         SpringApplication.run(SpringSpringbootExtentions.class);
-    }
+        }
 }

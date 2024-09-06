@@ -3,9 +3,10 @@ package com.seven.springspringbootextentions.domain;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class Student {
-    private String name="xiao ming";
+    private String name = "xiao ming";
+
     @Autowired
     private Teacher teacher;
 

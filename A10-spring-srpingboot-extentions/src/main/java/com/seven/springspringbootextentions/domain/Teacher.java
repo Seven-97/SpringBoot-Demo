@@ -3,11 +3,13 @@ package com.seven.springspringbootextentions.domain;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class Teacher {
-    private String name="li lao shi";
+    private String name = "li lao shi";
+
     @Autowired
     private Student student;
+
     public Teacher() {
         System.out.println("Teacher无参数构造器...创建Teacher对象");
     }
