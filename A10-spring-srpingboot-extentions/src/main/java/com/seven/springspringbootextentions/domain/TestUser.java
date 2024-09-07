@@ -1,11 +1,7 @@
 package com.seven.springspringbootextentions.domain;
 
 import org.springframework.beans.BeansException;
-import org.springframework.beans.factory.BeanFactory;
-import org.springframework.beans.factory.BeanFactoryAware;
-import org.springframework.beans.factory.BeanNameAware;
-import org.springframework.beans.factory.InitializingBean;
-import org.springframework.beans.factory.SmartInitializingSingleton;
+import org.springframework.beans.factory.*;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.ApplicationEventPublisher;
@@ -102,4 +98,5 @@ public class TestUser implements InitializingBean
     public void init() {
         System.out.println("TestUser...[PostConstruct]...init");
     }
+
 }

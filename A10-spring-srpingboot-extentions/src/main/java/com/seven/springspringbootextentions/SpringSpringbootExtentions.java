@@ -12,6 +12,8 @@ public class SpringSpringbootExtentions {
 //        SpringApplication springApplication = new SpringApplication(SpringSpringbootExtentions.class);
 //        springApplication.addInitializers(new TestApplicationContextInitializer());
 //        springApplication.run(args);
+        System.out.println("SpringSpringbootExtentions开始启动");
         SpringApplication.run(SpringSpringbootExtentions.class);
-        }
+        System.out.println("SpringSpringbootExtentions启动结束");
+    }
 }

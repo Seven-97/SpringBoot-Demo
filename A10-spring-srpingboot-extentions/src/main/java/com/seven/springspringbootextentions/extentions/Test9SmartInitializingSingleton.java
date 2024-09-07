@@ -4,9 +4,11 @@ import org.springframework.beans.factory.SmartInitializingSingleton;
 import org.springframework.stereotype.Component;
 
 @Component
-public class Test8SmartInitializingSingleton implements SmartInitializingSingleton {
+public class Test9SmartInitializingSingleton implements SmartInitializingSingleton {
+
     @Override
     public void afterSingletonsInstantiated() {
-        System.out.println("进入[Test8SmartInitializingSingleton]...afterSingletonsInstantiated...");
+        System.out.println("进入[Test9SmartInitializingSingleton]...afterSingletonsInstantiated...");
     }
+
 }
