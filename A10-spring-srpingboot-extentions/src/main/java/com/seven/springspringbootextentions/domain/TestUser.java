@@ -17,12 +17,15 @@ import org.springframework.stereotype.Component;
 import org.springframework.util.StringValueResolver;
 
 import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 
 @Component
 public class TestUser implements InitializingBean
         , BeanNameAware
+        , BeanClassLoaderAware
         , BeanFactoryAware
-        , EnvironmentAware, EmbeddedValueResolverAware, ResourceLoaderAware, ApplicationEventPublisherAware, MessageSourceAware, ApplicationContextAware {
+        , EnvironmentAware, EmbeddedValueResolverAware, ResourceLoaderAware, ApplicationEventPublisherAware, MessageSourceAware, ApplicationContextAware
+,DisposableBean{
     String name;
     String password;
 
@@ -95,8 +98,24 @@ public class TestUser implements InitializingBean
     }
 
     @PostConstruct
-    public void init() {
-        System.out.println("TestUser...[PostConstruct]...init");
+    public void initPostConstruct() {
+        System.out.println("TestUser...[PostConstruct]...initPostConstruct");
     }
+
+    @Override
+    public void setBeanClassLoader(ClassLoader classLoader) {
+        System.out.println("TestUser...[BeanClassLoaderAware]...setBeanClassLoader【" + classLoader + "】");
+    }
+
+    @Override
+    public void destroy() throws Exception {
+        System.out.println("TestUser...[DisposableBean]...destroy");
+    }
+
+    @PreDestroy
+    public void destroyPreDestroy() {
+        System.out.println("TestUser...[PreDestroy]...destroyPreDestroy");
+    }
+
 
 }
