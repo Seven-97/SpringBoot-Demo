@@ -12,10 +12,10 @@
         <module name="09-aop-limit-repeatsubmit-antishake" />
         <module name="05-mybatis-mysql-druid" />
         <module name="08-mybatisplus-easyexcel" />
+        <module name="03-validation-result-demo" />
         <module name="A10-spring-srpingboot-extentions" />
         <module name="01-helloworld-main" />
         <module name="07-mybatisplus-mysql" />
-        <module name="03-controller-validation" />
         <module name="06-mybatis-mysql-druid-pagehelper" />
       </profile>
     </annotationProcessing>

@@ -4,8 +4,13 @@
 ## 02-helloworld-tomcat
 使用外置Tomcat启动的Springboot项目
 
-## 03-controller-validation
-优雅的参数校验，特别包含枚举字段的校验
+## 03-validation-result-demo
+优雅的参数校验和返回体，包含
+- controller层的参数校验
+- 枚举字段的校验
+- 包含services层的参数校验
+- 包含优雅的返回体封装
+
 
 ## 04-mybatis-generator
 根据数据库字段 生成bean、mapper接口、mapper.xml

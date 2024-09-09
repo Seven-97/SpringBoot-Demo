@@ -4,6 +4,8 @@ package com.seven.controllervalidation.service;
 import com.seven.controllervalidation.entity.pojo.User;
 import com.seven.controllervalidation.entity.vo.UserVo;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import java.util.List;
 
 /**
@@ -22,7 +24,7 @@ public interface UserService {
      * @param id 用户id
      * @return 用户信息
      */
-    UserVo selectUserById(Integer id);
+    UserVo selectUserById(@NotNull(message = "id不能为空") Integer id);
 
 
     /**

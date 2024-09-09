@@ -5,24 +5,22 @@ import com.seven.controllervalidation.entity.pojo.User;
 import com.seven.controllervalidation.entity.vo.UserVo;
 import com.seven.controllervalidation.mapper.UserMapperImpl;
 import com.seven.controllervalidation.service.UserService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.validation.annotation.Validated;
 
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Service
+@RequiredArgsConstructor
+@Validated
 public class UserServiceImpl implements UserService {
 
     private final UserMapperImpl userMapperImpl;
-
-    //构造器注入
-    @Autowired
-    public UserServiceImpl(UserMapperImpl userMapperImpl) {
-        this.userMapperImpl = userMapperImpl;
-    }
 
     @Override
     public List<UserVo> selectUserList() {
