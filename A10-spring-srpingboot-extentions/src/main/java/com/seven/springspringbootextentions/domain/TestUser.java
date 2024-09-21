@@ -25,7 +25,7 @@ public class TestUser implements InitializingBean
         , BeanClassLoaderAware
         , BeanFactoryAware
         , EnvironmentAware, EmbeddedValueResolverAware, ResourceLoaderAware, ApplicationEventPublisherAware, MessageSourceAware, ApplicationContextAware
-,DisposableBean{
+        , DisposableBean {
     String name;
     String password;
 

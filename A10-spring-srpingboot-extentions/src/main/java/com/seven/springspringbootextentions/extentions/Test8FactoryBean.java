@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 public class Test8FactoryBean implements FactoryBean<SubBean> {
 
     public Test8FactoryBean() {
-        System.out.println("Test8FactoryBean无参数构造方法...创建了Test9FactoryBean对象");
+        System.out.println("Test8FactoryBean无参数构造方法...创建了Test8FactoryBean对象");
     }
 
     @Override
