@@ -6,10 +6,12 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/03-validation-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/A11-spring-springboot-dubbo/01-direct-dubbo-demo/dubbo-api/pom.xml" />
+        <option value="$PROJECT_DIR$/A11-spring-springboot-dubbo/01-direct-dubbo-demo/dubbo-provider/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="17" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

@@ -7,16 +7,32 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="04-mybatis-generator" />
-        <module name="02-helloworld-tomcat" />
-        <module name="09-aop-limit-repeatsubmit-antishake" />
         <module name="05-mybatis-mysql-druid" />
-        <module name="08-mybatisplus-easyexcel" />
-        <module name="03-validation-result-demo" />
-        <module name="A10-spring-srpingboot-extentions" />
+        <module name="04-springboot-dubbo-demo" />
         <module name="01-helloworld-main" />
         <module name="07-mybatisplus-mysql" />
+        <module name="01-direct-dubbo-demo" />
+        <module name="annotation-dubbo-provider" />
+        <module name="08-mybatisplus-easyexcel" />
+        <module name="A11-spring-springboot-dubbo" />
+        <module name="02-helloworld-tomcat" />
+        <module name="09-aop-limit-repeatsubmit-antishake" />
+        <module name="03-validation-result-demo" />
+        <module name="springboot-dubbo-provider" />
+        <module name="A10-spring-srpingboot-extentions" />
+        <module name="02-spring-dubbo-demo" />
+        <module name="annotation-dubbo-api" />
+        <module name="spring-dubbo-provider" />
+        <module name="springboot-dubbo-api" />
+        <module name="04-mybatis-generator" />
+        <module name="annotation-dubbo-consumer" />
+        <module name="dubbo-provider" />
+        <module name="spring-dubbo-api" />
+        <module name="spring-dubbo-consumer" />
+        <module name="springboot-dubbo-consumer" />
         <module name="06-mybatis-mysql-druid-pagehelper" />
+        <module name="dubbo-consumer" />
+        <module name="dubbo-api" />
       </profile>
     </annotationProcessing>
   </component>

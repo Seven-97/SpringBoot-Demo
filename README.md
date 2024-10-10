@@ -44,3 +44,12 @@ AOP注解的妙用 - 实现接口限流、防重、防抖
 
 ## A10-spring-srpingboot-extentions
 Spring中所有扩展点的调用顺序
+
+## A11-spring-springboot-dubbo
+四种方式使用dubbo
+- 直接使用
+- spring集成dubbo
+- 注解版dubbo
+- springboot集成dubbo
+
+

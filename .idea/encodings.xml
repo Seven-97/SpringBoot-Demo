@@ -21,6 +21,40 @@
     <file url="file://$PROJECT_DIR$/09-aop-limit-repeatsubmit-antishake/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/A10-spring-srpingboot-extentions/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/A10-spring-srpingboot-extentions/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/A11-spring-springboot-dubbo/01-direct-dubbo-demo/dubbo-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/A11-spring-springboot-dubbo/01-direct-dubbo-demo/dubbo-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/A11-spring-springboot-dubbo/01-direct-dubbo-demo/dubbo-consumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/A11-spring-springboot-dubbo/01-direct-dubbo-demo/dubbo-consumer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/A11-spring-springboot-dubbo/01-direct-dubbo-demo/dubbo-provider/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/A11-spring-springboot-dubbo/01-direct-dubbo-demo/dubbo-provider/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/A11-spring-springboot-dubbo/01-direct-dubbo-demo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/A11-spring-springboot-dubbo/01-direct-dubbo-demo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/A11-spring-springboot-dubbo/02-spring-dubbo-demo/spring-dubbo-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/A11-spring-springboot-dubbo/02-spring-dubbo-demo/spring-dubbo-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/A11-spring-springboot-dubbo/02-spring-dubbo-demo/spring-dubbo-consumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/A11-spring-springboot-dubbo/02-spring-dubbo-demo/spring-dubbo-consumer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/A11-spring-springboot-dubbo/02-spring-dubbo-demo/spring-dubbo-provider/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/A11-spring-springboot-dubbo/02-spring-dubbo-demo/spring-dubbo-provider/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/A11-spring-springboot-dubbo/02-spring-dubbo-demo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/A11-spring-springboot-dubbo/02-spring-dubbo-demo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/A11-spring-springboot-dubbo/03-annotation-dubbo-demo/annotation-dubbo-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/A11-spring-springboot-dubbo/03-annotation-dubbo-demo/annotation-dubbo-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/A11-spring-springboot-dubbo/03-annotation-dubbo-demo/annotation-dubbo-consumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/A11-spring-springboot-dubbo/03-annotation-dubbo-demo/annotation-dubbo-consumer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/A11-spring-springboot-dubbo/03-annotation-dubbo-demo/annotation-dubbo-provider/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/A11-spring-springboot-dubbo/03-annotation-dubbo-demo/annotation-dubbo-provider/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/A11-spring-springboot-dubbo/03-annotation-dubbo-demo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/A11-spring-springboot-dubbo/03-annotation-dubbo-demo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/A11-spring-springboot-dubbo/04-springboot-dubbo-demo/springboot-dubbo-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/A11-spring-springboot-dubbo/04-springboot-dubbo-demo/springboot-dubbo-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/A11-spring-springboot-dubbo/04-springboot-dubbo-demo/springboot-dubbo-consumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/A11-spring-springboot-dubbo/04-springboot-dubbo-demo/springboot-dubbo-consumer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/A11-spring-springboot-dubbo/04-springboot-dubbo-demo/springboot-dubbo-provider/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/A11-spring-springboot-dubbo/04-springboot-dubbo-demo/springboot-dubbo-provider/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/A11-spring-springboot-dubbo/04-springboot-dubbo-demo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/A11-spring-springboot-dubbo/04-springboot-dubbo-demo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/A11-spring-springboot-dubbo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/A11-spring-springboot-dubbo/src/main/resources" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

@@ -20,6 +20,20 @@
         <module>08-mybatisplus-easyexcel</module>
         <module>09-aop-limit-repeatsubmit-antishake</module>
         <module>A10-spring-srpingboot-extentions</module>
+        <module>A11-spring-springboot-dubbo</module>
+        <module>A11-spring-springboot-dubbo/01-direct-dubbo-demo</module>
+        <module>A11-spring-springboot-dubbo/01-direct-dubbo-demo/dubbo-api</module>
+        <module>A11-spring-springboot-dubbo/01-direct-dubbo-demo/dubbo-consumer</module>
+        <module>A11-spring-springboot-dubbo/01-direct-dubbo-demo/dubbo-provider</module>
+        <module>A11-spring-springboot-dubbo/02-spring-dubbo-demo</module>
+        <module>A11-spring-springboot-dubbo/02-spring-dubbo-demo/spring-dubbo-api</module>
+        <module>A11-spring-springboot-dubbo/02-spring-dubbo-demo/spring-dubbo-consumer</module>
+        <module>A11-spring-springboot-dubbo/02-spring-dubbo-demo/spring-dubbo-provider</module>
+        <module>A11-spring-springboot-dubbo/03-annotation-dubbo-demo</module>
+        <module>A11-spring-springboot-dubbo/04-springboot-dubbo-demo</module>
+        <module>A11-spring-springboot-dubbo/04-springboot-dubbo-demo/springboot-dubbo-api</module>
+        <module>A11-spring-springboot-dubbo/04-springboot-dubbo-demo/springboot-dubbo-provider</module>
+        <module>A11-spring-springboot-dubbo/04-springboot-dubbo-demo/springboot-dubbo-consumer</module>
     </modules>
 
 
